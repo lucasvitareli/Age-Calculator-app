@@ -1,0 +1,170 @@
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+.form-container .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 26px;
+  margin-bottom: 26px;
+}
+.form-container .input-group h2 {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+.form-container .input-group .status {
+  width: 120px;
+  padding: 12px;
+  margin-top: 4px;
+  border: 1px solid hsl(0, 0%, 86%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  border-radius: 8px;
+}
+.form-container .input-group #year {
+  width: 140px;
+}
+.form-container .input-group span {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  margin-top: 4px;
+  color: hsl(0, 100%, 67%);
+  visibility: hidden;
+}
+.form-container .input-group.error h2 {
+  color: hsl(0, 100%, 67%);
+}
+.form-container .input-group.error .status {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+.form-container .input-group.error span {
+  visibility: visible;
+}
+
+.divider {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid hsl(0, 0%, 86%);
+  margin: 16px 0;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 58px;
+}
+.counter p {
+  font-family: "Poppins", sans-serif;
+  font-size: 90px;
+  font-weight: 800;
+  font-style: italic;
+}
+.counter p span {
+  color: hsl(259, 100%, 65%);
+}
+
+.Btn {
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  background: hsl(259, 100%, 65%);
+}
+
+.arrowDown {
+  transition-duration: 0.3s;
+  color: hsl(0, 0%, 100%);
+  width: 80px;
+}
+
+.arrowDown path {
+  fill: hsl(0, 0%, 100%);
+}
+
+.text {
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+  font-family: "Poppins", sans-serif;
+  width: 120px;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover {
+  width: 180px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover .arrowDown {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 18px;
+  border-bottom-right-radius: 180px;
+}
+
+.divider {
+  width: 95%;
+  border: 0;
+  border-top: 1px solid hsl(0, 0%, 86%);
+  margin: 0;
+  position: relative;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Btn {
+  margin-left: 16px;
+  position: absolute;
+  right: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
