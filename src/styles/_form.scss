@@ -1,0 +1,70 @@
+@use 'variables' as v;
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-right: 26px;
+        margin-bottom: 26px;
+
+        h2 {
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            color: v.$smoke-gray;
+            letter-spacing: 2px;
+        }
+
+        .status {
+            width: 120px;
+            padding: 12px;
+            margin-top: 4px;
+            border: 1px solid v.$light-gray;
+            font-family: v.$font-family;
+            font-weight: 800;
+            font-size: 24px;
+            border-radius: 8px;
+        }
+
+        #year {
+            width: 140px;
+        }
+
+        span {
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            margin-top: 4px;
+            color: v.$light-red;
+            visibility: hidden;
+        }
+
+        &.error {
+            h2 {
+                color: v.$light-red; 
+            }
+
+            .status {
+                border: 1px solid v.$light-red;
+            }
+
+            span {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.divider {
+    display: flex;
+    position: relative;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid v.$light-gray;
+    margin: 16px 0;
+}
+

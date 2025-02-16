@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="./dist/styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@400;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="input-group " id="input-group-day">
+        <h2>DAY</h2>
+        <input type="text" class="status" id="day" placeholder="--" required >
+        <span id="daySpan">Must be a valid day</span>
+      </div>
+      <div class="input-group" id="input-group-month">
+        <h2>MONTH</h2>
+        <input type="text" class="status" id="month" placeholder="--" required>
+        <span id="monthSpan">Must be a valid month</span>
+      </div>
+      <div class="input-group" id="input-group-year">
+        <h2>YEAR</h2>
+        <input type="text" class="status" id="year" placeholder="----" required>
+        <span id="yearSpan">Must be in the past</span>
+      </div>
+    </div>
+
+    <!-- divider line-->
+    <div class="divider">
+      <hr class="divider-line">
+      <!-- calculate button-->
+      <button id="calculate" class="Btn">
+        <span class="material-symbols-outlined arrowDown">arrow_downward</span>
+        <span class="text">Calculate</span>
+      </button>
+    </div>
+
+    <!-- counter results-->
+    <div class="counter">
+      <p class="__years"><span class="yearAge">- -</span> years</p>
+      <p class="__months"><span class="monthAge">- -</span> months</p>
+      <p class="__days"><span class="daysAge">- -</span> days</p>
+    </div>
+  </div>
+
+
+  <script src="src/scripts/main.js"></script>
+
+</body>
+
+</html>

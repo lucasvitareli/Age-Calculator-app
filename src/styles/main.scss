@@ -1,0 +1,51 @@
+@use 'variables' as v;
+@use 'form';
+@use 'counter';
+@use 'btn';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: v.$light-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: v.$white;
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 32px;
+    border-radius: 18px;
+    border-bottom-right-radius: 180px ;
+}
+
+.divider {
+    width: 95%;
+    border: 0;
+    border-top: 1px solid v.$light-gray;
+    margin: 0;
+    position: relative;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Btn {
+    margin-left: 16px;
+    position: absolute;
+    right: 0;
+}
+
+
+

@@ -1,0 +1,52 @@
+@use 'variables' as v;
+
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    background: v.$purple;
+}
+
+.arrowDown {
+    transition-duration: 0.3s;
+    color: v.$white;
+    width: 80px;
+}
+
+.arrowDown path {
+    fill: v.$white;
+}
+
+.text {
+    position: absolute;
+    color: v.$white;
+    font-family: 'Poppins', sans-serif;
+    width: 120px;
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.Btn:hover {
+    width: 180px;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+.Btn:hover .arrowDown {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
