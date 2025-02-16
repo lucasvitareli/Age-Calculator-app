@@ -42,9 +42,22 @@ body {
 }
 
 .Btn {
-    margin-left: 16px;
+    margin: 0 auto;
     position: absolute;
     right: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 16px;
+        border-bottom-right-radius: 120px;
+        
+        .Btn {
+            right: 40%;
+        }
+    }
+
 }
 
 

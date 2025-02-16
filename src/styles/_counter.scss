@@ -3,19 +3,35 @@
 .counter {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     margin-top: 58px;
 
-    
+
     p {
         span {
             color: v.$purple;
         }
-        font-family: 'Poppins', sans-serif;
+
+        font-family: 'Poppins',
+        sans-serif;
         font-size: 90px;
         font-weight: 800;
         font-style: italic;
     }
+}
 
+@media (max-width: 768px) {
+    .counter {
+        // align-items: center;
 
+        .__years, .__months, .__days {
+            font-size: 54px;
+        }
+
+        p {
+            span {
+                font-size: 54px;
+            }
+        }
+    }
 }

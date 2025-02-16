@@ -68,3 +68,32 @@
     margin: 16px 0;
 }
 
+@media (max-width: 768px) {
+    
+    .form-container {
+        
+        .input-group {
+            margin-right: 0;
+            margin-bottom: 16px;
+
+            h2 {
+                font-size: 1.0rem;
+            }
+
+            .status {
+                width: 100px;
+                padding: 8px;
+                font-size: 1.2rem;
+            }
+
+            span {
+                font-size: 1rem;
+            }
+
+            #year {
+                width: 100px;
+            }
+        }
+    }
+}
+

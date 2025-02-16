@@ -12,6 +12,8 @@
     cursor: pointer;
     position: relative;
     background: v.$purple;
+    margin: 0;
+    right: 0;
 }
 
 .arrowDown {
@@ -49,4 +51,29 @@
 .Btn:hover .arrowDown {
     opacity: 0;
     transition-duration: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .Btn {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Btn:hover {
+        width: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .arrowDown {
+        width: 60px;
+    }
+
+    .text {
+        width: 80px;
+        font-size: 16px;
+    }
 }

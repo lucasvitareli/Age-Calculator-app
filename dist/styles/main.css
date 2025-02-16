@@ -56,6 +56,26 @@
   margin: 16px 0;
 }
 
+@media (max-width: 768px) {
+  .form-container .input-group {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .form-container .input-group h2 {
+    font-size: 1rem;
+  }
+  .form-container .input-group .status {
+    width: 100px;
+    padding: 8px;
+    font-size: 1.2rem;
+  }
+  .form-container .input-group span {
+    font-size: 1rem;
+  }
+  .form-container .input-group #year {
+    width: 100px;
+  }
+}
 .counter {
   display: flex;
   flex-direction: column;
@@ -72,6 +92,14 @@
   color: hsl(259, 100%, 65%);
 }
 
+@media (max-width: 768px) {
+  .counter .__years, .counter .__months, .counter .__days {
+    font-size: 54px;
+  }
+  .counter p span {
+    font-size: 54px;
+  }
+}
 .Btn {
   border: none;
   border-radius: 50%;
@@ -84,6 +112,8 @@
   cursor: pointer;
   position: relative;
   background: hsl(259, 100%, 65%);
+  margin: 0;
+  right: 0;
 }
 
 .arrowDown {
@@ -123,6 +153,27 @@
   transition-duration: 0.3s;
 }
 
+@media (max-width: 768px) {
+  .Btn {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .Btn:hover {
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .arrowDown {
+    width: 60px;
+  }
+  .text {
+    width: 80px;
+    font-size: 16px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -162,9 +213,20 @@ body {
 }
 
 .Btn {
-  margin-left: 16px;
+  margin: 0 auto;
   position: absolute;
   right: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 16px;
+    border-bottom-right-radius: 120px;
+  }
+  .container .Btn {
+    right: 40%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
